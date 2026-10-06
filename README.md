@@ -1,1 +1,0 @@
-# CHANDU -M010 Portfolio\n\nModern responsive developer portfolio built for GitHub Pages/Vercel.\n\n## Highlights\n- Responsive dark portfolio\n- About, skills, projects and contact sections\n- Links to real GitHub projects\n- No framework or build step required\n
