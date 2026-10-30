@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { useDropzone, type FileRejection } from "react-dropzone";
 import { PDFDocument } from "pdf-lib";
 import {
@@ -85,11 +85,6 @@ export default function FileUploader() {
   const [items, setItems] = useState<UploadItem[]>([]);
   const [notice, setNotice] = useState("");
 
-  useEffect(() => () => {
-    items.forEach((item) => {
-      if (item.previewUrl) URL.revokeObjectURL(item.previewUrl);
-    });
-  }, [items]);
 
   const addFiles = useCallback((accepted: File[], rejections: FileRejection[]) => {
     setNotice("");
